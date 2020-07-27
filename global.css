@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+p, h1 { margin: 0 }
+
+a {
+    color: white;
+}
+
+.navBar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navBar li a {
+    display: block;
+    text-align: center;
+    padding: 18px 22px;
+    text-decoration: none;
+}
+
+.headerImage {
+    background-image: url("./images/header-image.jpg");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 80vh;
+    background-size: cover;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.headerImage p {
+    position:relative;
+    top: 50%;
+    visibility:hidden;
+    background: black;
+    font-size: 5vw;
+    }
+    
+.headerImage:hover p {
+    visibility:visible;
+}
+
+.profilePicture {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.profilePicture img {
+    max-width: 15em;
+}
+
+.description {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.myWorkContainer {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 2.5em;
+}
+
+.myWorkGitHub {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.myWorkGitHubContainer {
+    flex: 1; 
+    display: flex; 
+    flex-direction: row; 
+    margin-bottom: 5em; 
+    align-items: center; 
+    max-width: 80vw;
+}
+
+.myWorkGitHubImageContainer {
+    flex: 1; 
+}
+
+.myWorkGitHubTextContainer {
+    flex: 1; 
+    padding-left: 1em;
+}
+
+.myWorkGitHubImage {
+    width: 100%; 
+    height: auto;
+}
+
+.myPhotosContainer {
+    text-align: center; 
+    margin-bottom: 5em;
+}
+
+.myPhotosBlock {
+    display: flex; 
+    flex-direction: row; 
+    flex-flow: wrap; 
+    height: 100%; 
+    width: 100%; 
+    margin: 0 auto; 
+    justify-content: center;
+}
+
+.myPhotosImageContainer {
+    margin: 1em; 
+    max-width: 400px; 
+    max-height: 400px; 
+    width: 100%; 
+    height: 100%;
+}
+
+.myPhotosImage {
+    margin: 1em; 
+    max-width: 400px; 
+    max-height: 400px; 
+    width: 100%; 
+    height: 100%;
+}
+
