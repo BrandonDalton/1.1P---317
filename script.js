@@ -19,16 +19,17 @@ function generateNumbers() {
     var colorBrightness1 = (((arr1[0] * 299) + (arr1[1] * 587) + (arr1[2] * 114)) / 1000)
 
     var colorRange = colorBrightness - colorBrightness1;
-
+   
     $("body").css("background", `linear-gradient(0deg,rgb(${color1}),rgb(${color2})`);
 
     if(colorRange <= 125 || colorRange <= -125) {
         console.log('Color Range Is Great')
+        $("body").css("color", `white`);
     } else {
         console.log('Color Range Is Bad')
         random1 = Math.floor(Math.random() * 20) + 1;
         color1 = colors[random1 - 1];
-        $("body").css("color", `rgb(${color1})`);
+        $("body").css("color", `black`);
     }
 
 }
